@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using DiractionTeam.Utils;
-using DiractionTeam.Utils.VectorUtilities;
 using UnityEngine;
 
 public static class DrawUtils
@@ -93,14 +92,6 @@ public static class DrawUtils
             DrawLine(v1, v2);
             DrawLine(v2, v3);
             DrawLine(v3, v0);
-        }
-        
-        public void DrawWireQuad(Rect3D rect3D)
-        {
-            DrawLine(rect3D.LBVert, rect3D.LUVert);
-            DrawLine(rect3D.LUVert, rect3D.RUVert);
-            DrawLine(rect3D.RUVert, rect3D.RBVert);
-            DrawLine(rect3D.RBVert, rect3D.LBVert);
         }
         
         public void DrawWireTriangle2D(Vector2 position, Vector2 direction, float height, float angle)
