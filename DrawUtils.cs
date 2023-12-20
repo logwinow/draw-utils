@@ -189,6 +189,11 @@ public static class DrawUtils
             }
         }
 
+        public void DrawCircleXY(Vector3 position, float radius, int segmentsCount = 16)
+        {
+            DrawCircle(position, radius, Vector3.back, segmentsCount);
+        }
+
         public void DrawWireCircleXZ(Vector3 position, float radius, int segmentsCount = 16)
         {
             DrawWireCircle(position, radius, Vector3.up, segmentsCount);
